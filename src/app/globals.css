@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #1B4F72;
+  --color-brand-primary-dark: #143a55;
+  --color-brand-secondary: #2E86C1;
+  --color-brand-accent: #27AE60;
+  --color-brand-accent-dark: #1f8b4d;
+  --color-brand-emergency: #C0392B;
+  --color-brand-emergency-dark: #962b20;
+  --color-brand-bg: #F8F9FA;
+  --color-brand-text: #1A1A2E;
+  --color-brand-muted: #5D6D7E;
+  --color-brand-border: #D5D8DC;
+
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1A1A2E;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+/* Hide scrollbar utility for marquee/carousels */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  scrollbar-width: none;
+}
